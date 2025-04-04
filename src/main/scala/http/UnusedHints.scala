@@ -26,7 +26,7 @@ object UnusedHints {
     }
   }
 
-  val requestExample: Future[HttpResponse] = Http.singleRequest(
+  val requestExample: Future[HttpResponse] = Http().singleRequest(
     HttpRequest(
       uri = "http://akka.io",
       entity = HttpEntity("{}")
